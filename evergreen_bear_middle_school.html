@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Evergreen Bear Middle School</title>
+<style>
+:root{--green:#123d2b;--green2:#1d5b3d;--gold:#e8b83f;--brown:#704323;--cream:#fff9e9;--ink:#203027}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#f7f8f3;line-height:1.6}
+header{background:var(--green);color:white;position:sticky;top:0;z-index:5;box-shadow:0 3px 15px #0002}
+.nav{max-width:1150px;margin:auto;padding:12px 22px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;line-height:1.15}.brand small{display:block;color:#f6d77e;font-size:11px;letter-spacing:1.5px;margin-top:4px}
+.mark{width:48px;height:48px;border-radius:15px;background:var(--gold);display:grid;place-items:center;font-size:29px}
+nav{display:flex;gap:8px;flex-wrap:wrap}nav a{color:white;text-decoration:none;padding:9px 12px;border-radius:9px;font-weight:700;font-size:14px}nav a:hover,nav a:focus{background:#ffffff20}
+.hero{background:linear-gradient(120deg,#103a29ed,#1d5b3ddd),radial-gradient(circle at 85% 20%,#ffffff30,transparent 30%);color:white;padding:75px 22px}
+.hero-inner{max-width:1100px;margin:auto;display:grid;grid-template-columns:1.3fr .7fr;align-items:center;gap:35px}
+.eyebrow{color:#f6d77e;font-weight:800;letter-spacing:2px;text-transform:uppercase;font-size:13px}
+h1{font-size:clamp(38px,6vw,65px);line-height:1.03;margin:12px 0 18px;letter-spacing:-1.5px}
+.hero p{font-size:18px;max-width:600px;color:#eef5ed}
+.buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+.btn{display:inline-block;text-decoration:none;border:0;border-radius:11px;padding:13px 19px;font-weight:800;cursor:pointer;font-size:15px}
+.btn.gold{background:var(--gold);color:#2b281b}.btn.light{background:white;color:var(--green)}
+.bear-card{background:#ffffff12;border:1px solid #ffffff35;border-radius:28px;padding:22px;text-align:center}
+.bear{font-size:112px;line-height:1.25;filter:drop-shadow(0 8px 0 #0002)}
+.bear-card strong{display:block;font-size:21px;color:#ffe08a}.bear-card span{font-size:13px;color:#e8f0e9}
+main{max-width:1100px;margin:auto;padding:45px 22px 70px}
+.section-title{text-align:center;margin:0 auto 28px}.section-title .eyebrow{color:var(--green2)}h2{font-size:32px;color:var(--green);margin:5px 0}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:white;border:1px solid #e5e9df;border-radius:18px;padding:22px;box-shadow:0 5px 18px #173b2110}
+.card .icon{font-size:30px}.card h3{color:var(--green);margin:8px 0}
+.band{background:#eaf0e7;border-top:4px solid var(--gold);border-bottom:4px solid var(--gold);padding:34px 22px;margin:15px 0 42px}
+.band-inner{max-width:1050px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:25px}
+.band h2{margin:0}.band p{margin:4px 0 0}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start}
+.panel{background:white;border-radius:18px;padding:24px;border:1px solid #e4e9df}
+.panel h3{margin-top:0;color:var(--green)}
+ul.clean{padding-left:20px;margin-bottom:0}
+.notice{background:#fff5d9;border-left:5px solid var(--gold);padding:14px 16px;border-radius:8px;margin:15px 0}
+form{display:grid;grid-template-columns:1fr 1fr;gap:13px}
+label{font-weight:700;font-size:14px;color:#34483a;display:block}
+input,select,textarea{width:100%;margin-top:5px;padding:11px;border:1px solid #cbd5c9;border-radius:9px;font:inherit;background:#fff}
+textarea{min-height:95px;resize:vertical}.full{grid-column:1/-1}
+.form-actions{display:flex;gap:10px;flex-wrap:wrap;grid-column:1/-1}
+footer{background:#0d2f21;color:#eaf1e9;text-align:center;padding:28px 20px}
+footer strong{color:#f6d77e}footer p{margin:5px}
+@media(max-width:760px){.nav{align-items:flex-start;flex-direction:column}nav{gap:3px}nav a{padding:7px 9px}.hero-inner,.two-col{grid-template-columns:1fr}.bear-card{max-width:330px;margin:auto}.cards{grid-template-columns:1fr}.band-inner{display:block}.band .btn{margin-top:14px}form{grid-template-columns:1fr}.full{grid-column:auto}}
+@media print{header,.hero,.buttons,.form-actions,footer{display:none!important}body{background:white}main{padding:0}.panel{box-shadow:none;border:0}}
+</style>
+</head>
+<body>
+<header>
+  <div class="nav">
+    <div class="brand"><div class="mark">🐻</div><div>EVERGREEN BEAR<small>MIDDLE SCHOOL</small></div></div>
+    <nav aria-label="Main navigation">
+      <a href="#home">Home</a><a href="#about">About</a><a href="#academics">Academics</a><a href="#student-life">Student Life</a><a href="#class-code">Class Code</a><a href="#forms">Staff Forms</a>
+    </nav>
+  </div>
+</header>
+<section class="hero" id="home">
+ <div class="hero-inner">
+  <div><div class="eyebrow">Welcome to our school</div>
+   <h1>Strong Minds.<br>Strong Futures.</h1>
+   <p>A place to learn, grow, make friends, and discover what makes every Evergreen Bear special.</p>
+   <div class="buttons"><a class="btn gold" href="#about">Discover Our School</a><a class="btn light" href="#student-life">Explore Student Life</a></div>
+  </div>
+  <div class="bear-card"><div class="bear">🐻</div><strong>GO BEARS!</strong><span>Kind • Curious • Courageous</span></div>
+ </div>
+</section>
+<main>
+ <section id="about">
+  <div class="section-title"><div class="eyebrow">Who we are</div><h2>Welcome, Evergreen Bears!</h2><p>Our school concept is built around community, curiosity, and helping students do their best.</p></div>
+  <div class="cards">
+   <article class="card"><div class="icon">🌲</div><h3>Our Identity</h3><p>Our mascot is a friendly brown bear, inspired by the strength and spirit of the forest.</p></article>
+   <article class="card"><div class="icon">🎓</div><h3>Our Grades</h3><p>A middle school community for students in grades 6, 7, and 8.</p></article>
+   <article class="card"><div class="icon">🤝</div><h3>Our Values</h3><p>Respect, responsibility, kindness, teamwork, and a love of learning.</p></article>
+  </div>
+ </section>
+</main>
+<div class="band"><div class="band-inner"><div><h2>🌲 Our School Colors</h2><p>Forest Green is our primary color, joined by Bear Brown, Golden Gold, and Cream White.</p></div><a class="btn gold" href="#student-life">See Bear Spirit</a></div></div>
+<main>
+ <section id="academics">
+  <div class="section-title"><div class="eyebrow">Learning together</div><h2>Academics</h2><p>Explore the subjects and skills students can build at Evergreen Bear Middle School.</p></div>
+  <div class="cards">
+   <article class="card"><div class="icon">📚</div><h3>Language Arts</h3><p>Reading, writing, communication, and creative thinking.</p></article>
+   <article class="card"><div class="icon">🔬</div><h3>Science & Math</h3><p>Ask questions, investigate ideas, solve problems, and explore the world.</p></article>
+   <article class="card"><div class="icon">🌎</div><h3>History & Arts</h3><p>Discover communities, cultures, music, art, and creative expression.</p></article>
+  </div>
+ </section>
+ <section id="student-life" style="padding-top:55px">
+  <div class="section-title"><div class="eyebrow">Beyond the classroom</div><h2>Student Life</h2><p>School is also about friendships, activities, and finding your interests.</p></div>
+  <div class="two-col">
+   <div class="panel"><h3>🐾 Clubs & Activities</h3><ul class="clean"><li>Art and drawing club</li><li>Book and reading club</li><li>Science and nature club</li><li>Music and performance</li><li>Student leadership</li></ul></div>
+   <div class="panel"><h3>🏀 Bear Athletics</h3><ul class="clean"><li>Basketball</li><li>Volleyball</li><li>Track and field</li><li>Fitness and recreation</li><li>School spirit events</li></ul></div>
+  </div>
+ </section>
+ <section id="class-code" style="padding-top:55px">
+  <div class="section-title"><div class="eyebrow">Classroom access</div><h2>🐻 Join Your Class</h2><p>Use the class code provided by your teacher to identify your classroom.</p></div>
+  <div class="panel" style="max-width:620px;margin:0 auto;text-align:center">
+   <p style="margin-top:0;font-weight:700;color:var(--green)">Evergreen Bear Middle School Class Code</p>
+   <div id="classCode" style="display:inline-block;background:var(--cream);border:2px dashed var(--green2);border-radius:14px;padding:15px 24px;font-size:clamp(25px,6vw,36px);font-weight:900;letter-spacing:3px;color:var(--green)">un4cpxwi</div>
+   <div style="margin-top:16px"><button class="btn gold" type="button" onclick="copyClassCode()">Copy Class Code</button></div>
+   <p id="copyMessage" role="status" style="font-size:13px;color:#526456;margin-bottom:0">Demo display only — this page does not verify class membership or provide a secure login.</p>
+  </div>
+ </section>
+ <section id="forms" style="padding-top:55px">
+  <div class="section-title"><div class="eyebrow">Staff workspace demo</div><h2>Referral & Lunch Detention</h2><p>A sample form layout for the future school's staff workflow.</p></div>
+  <div class="notice"><strong>Demo only:</strong> This prototype does not send or save student information. Do not enter real student details. A real school would need secure, approved systems and policies before using forms like these.</div>
+  <div class="panel">
+   <h3>🐻 Staff Referral Form</h3>
+   <form id="referralForm">
+    <div><label for="student">Student name (demo)</label><input id="student" placeholder="Example Student"></div>
+    <div><label for="grade">Grade</label><select id="grade"><option value="">Select grade</option><option>6th</option><option>7th</option><option>8th</option></select></div>
+    <div><label for="staff">Staff member</label><input id="staff" placeholder="Staff name"></div>
+    <div><label for="date">Date</label><input id="date" type="date"></div>
+    <div><label for="type">Referral type</label><select id="type"><option>Positive recognition</option><option>Behavior concern</option><option>Bullying / safety concern</option><option>Office support request</option></select></div>
+    <div><label for="location">Location</label><input id="location" placeholder="Classroom, hallway, etc."></div>
+    <div class="full"><label for="details">Description / staff notes</label><textarea id="details" placeholder="Describe the concern or positive action in a factual, respectful way."></textarea></div>
+    <div class="form-actions"><button class="btn gold" type="button" onclick="window.print()">Print blank / completed demo</button><button class="btn" style="background:#e8eee7;color:#183d2b" type="reset">Clear form</button></div>
+   </form>
+  </div>
+  <div class="panel" style="margin-top:20px">
+   <h3>🍎 Lunch Detention Notice — Sample</h3>
+   <p><strong>Student:</strong> ____________________ &nbsp; <strong>Grade:</strong> ______</p>
+   <p><strong>Date issued:</strong> ______________ &nbsp; <strong>Assigned date:</strong> ______________</p>
+   <p><strong>Reason:</strong> __________________________________________________</p>
+   <p><strong>Supervising staff:</strong> ____________________ &nbsp; <strong>Location:</strong> __________</p>
+   <p><strong>Staff notes:</strong> __________________________________________________</p>
+   <p><em>Any real school procedure should follow applicable school policies and ensure students receive their full meal period and appropriate supervision.</em></p>
+   <button class="btn gold" onclick="window.print()">Print sample notice</button>
+  </div>
+ </section>
+</main>
+<footer><strong>EVERGREEN BEAR MIDDLE SCHOOL</strong><p>Strong Minds. Strong Futures. 🐻</p><p>Concept website • Not an operating school</p></footer>
+<script>
+function copyClassCode(){
+ const code=document.getElementById('classCode').textContent.trim();
+ const message=document.getElementById('copyMessage');
+ if(navigator.clipboard && window.isSecureContext){
+  navigator.clipboard.writeText(code).then(()=>{message.textContent='Class code copied!';}).catch(()=>{message.textContent='Your class code is: '+code;});
+ }else{
+  message.textContent='Your class code is: '+code+' (select and copy it)';
+ }
+}
+</script>
+</body>
+</html>
